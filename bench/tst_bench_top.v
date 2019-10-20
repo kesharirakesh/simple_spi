@@ -70,8 +70,8 @@ module testbench();
    initial begin
       clk = 1'b0;
       forever begin
-         #5 clk = 1'b1;
-	 #5 clk = 1'b0;
+         #10 clk = 1'b1; //for test incresing clock period
+	 #10 clk = 1'b0;
       end
    end
    
